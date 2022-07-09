@@ -24,16 +24,17 @@ namespace ProyectoPOE
 
         private void btn_Ingresar_Click(object sender, EventArgs e)
         {
-            if (txt_Usuario.Text == "admin" && txt_Contraseña.Text == "admin")
+            if (txt_Usuario.Text == "admin" && txt_ContraseÃ±a.Text == "admin")
             {
                 new MenuPage().Show();
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrectos");
+            // Test de commit
+                MessageBox.Show("Usuario o contraseÃ±a incorrectos");
                 txt_Usuario.Clear();
-                txt_Contraseña.Clear();
+                txt_ContraseÃ±a.Clear();
                 txt_Usuario.Focus();
             }
         }
