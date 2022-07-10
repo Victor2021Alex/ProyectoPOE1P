@@ -191,6 +191,7 @@
             this.btn_Regresar.TabIndex = 6;
             this.btn_Regresar.Text = "<- Regresar al menu";
             this.btn_Regresar.UseVisualStyleBackColor = true;
+            this.btn_Regresar.Click += new System.EventHandler(this.btn_Regresar_Click);
             // 
             // InventarioStock
             // 

@@ -16,5 +16,11 @@ namespace ProyectoPOE
         {
             InitializeComponent();
         }
+
+        private void btn_Regresar_Click(object sender, EventArgs e)
+        {
+            new MenuPage().Show();
+            this.Hide();
+        }
     }
 }

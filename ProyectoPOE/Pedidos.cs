@@ -16,5 +16,11 @@ namespace OpcionPedidos
         {
             InitializeComponent();
         }
+
+        private void btn_Regresar_Click(object sender, EventArgs e)
+        {
+            new ProyectoPOE.MenuPage().Show();
+            this.Hide();
+        }
     }
 }
