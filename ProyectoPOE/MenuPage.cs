@@ -22,5 +22,17 @@ namespace ProyectoPOE
             new EstadisticaVentas().Show();
             this.Hide();
         }
+
+        private void btn_RegistrarPedido_Click(object sender, EventArgs e)
+        {
+            new OpcionPedidos.Pedidos().Show();
+            this.Hide();
+        }
+
+        private void btn_InventarioStock_Click(object sender, EventArgs e)
+        {
+            new InventarioStock().Show();
+            this.Hide();
+        }
     }
 }

@@ -28,11 +28,15 @@
         {
             this.btn_VerEstadistica = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btn_RegistrarPedido = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btn_InventarioStock = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_VerEstadistica
             // 
-            this.btn_VerEstadistica.Location = new System.Drawing.Point(12, 108);
+            this.btn_VerEstadistica.Location = new System.Drawing.Point(12, 174);
             this.btn_VerEstadistica.Name = "btn_VerEstadistica";
             this.btn_VerEstadistica.Size = new System.Drawing.Size(143, 34);
             this.btn_VerEstadistica.TabIndex = 0;
@@ -44,17 +48,61 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 58);
+            this.label1.Location = new System.Drawing.Point(12, 241);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 30);
+            this.label1.Size = new System.Drawing.Size(181, 30);
             this.label1.TabIndex = 1;
-            this.label1.Text = "VER ESTADISTICAS DE VENTAS";
+            this.label1.Text = "Inventario Stock";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(12, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(186, 30);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Registrar pedido";
+            // 
+            // btn_RegistrarPedido
+            // 
+            this.btn_RegistrarPedido.Location = new System.Drawing.Point(12, 59);
+            this.btn_RegistrarPedido.Name = "btn_RegistrarPedido";
+            this.btn_RegistrarPedido.Size = new System.Drawing.Size(143, 34);
+            this.btn_RegistrarPedido.TabIndex = 2;
+            this.btn_RegistrarPedido.Text = "Ver Registrar";
+            this.btn_RegistrarPedido.UseVisualStyleBackColor = true;
+            this.btn_RegistrarPedido.Click += new System.EventHandler(this.btn_RegistrarPedido_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(12, 125);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(230, 30);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Estadistica de ventas";
+            // 
+            // btn_InventarioStock
+            // 
+            this.btn_InventarioStock.Location = new System.Drawing.Point(12, 285);
+            this.btn_InventarioStock.Name = "btn_InventarioStock";
+            this.btn_InventarioStock.Size = new System.Drawing.Size(143, 34);
+            this.btn_InventarioStock.TabIndex = 4;
+            this.btn_InventarioStock.Text = "Ver Inventario Stock";
+            this.btn_InventarioStock.UseVisualStyleBackColor = true;
+            this.btn_InventarioStock.Click += new System.EventHandler(this.btn_InventarioStock_Click);
             // 
             // MenuPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.btn_InventarioStock);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btn_RegistrarPedido);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_VerEstadistica);
             this.Name = "MenuPage";
@@ -68,5 +116,9 @@
 
         private Button btn_VerEstadistica;
         private Label label1;
+        private Label label2;
+        private Button btn_RegistrarPedido;
+        private Label label3;
+        private Button btn_InventarioStock;
     }
 }
