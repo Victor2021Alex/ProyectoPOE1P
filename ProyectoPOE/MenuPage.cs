@@ -8,11 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoPOE {
-    public partial class MenuPage : Form {
+namespace ProyectoPOE
+{
+    public partial class MenuPage : Form
+    {
         public MenuPage()
         {
             InitializeComponent();
+        }
+
+        private void btn_VerEstadistica_Click(object sender, EventArgs e)
+        {
+            new EstadisticaVentas().Show();
+            this.Hide();
         }
     }
 }
