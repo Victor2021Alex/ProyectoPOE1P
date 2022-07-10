@@ -27,6 +27,7 @@
         private void InitializeComponent()
         {
             this.lv_EstadisticaVentas = new System.Windows.Forms.ListView();
+            this.Nombre = new System.Windows.Forms.ColumnHeader();
             this.Enero = new System.Windows.Forms.ColumnHeader();
             this.Febrero = new System.Windows.Forms.ColumnHeader();
             this.Marzo = new System.Windows.Forms.ColumnHeader();
@@ -49,6 +50,7 @@
             // lv_EstadisticaVentas
             // 
             this.lv_EstadisticaVentas.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Nombre,
             this.Enero,
             this.Febrero,
             this.Marzo,
@@ -67,6 +69,11 @@
             this.lv_EstadisticaVentas.TabIndex = 0;
             this.lv_EstadisticaVentas.UseCompatibleStateImageBehavior = false;
             this.lv_EstadisticaVentas.View = System.Windows.Forms.View.Details;
+            // 
+            // Nombre
+            // 
+            this.Nombre.Text = "Nombre";
+            this.Nombre.Width = 131;
             // 
             // Enero
             // 
@@ -146,6 +153,7 @@
             this.btn_MenosVendido.TabIndex = 2;
             this.btn_MenosVendido.Text = "Menos Vendidos";
             this.btn_MenosVendido.UseVisualStyleBackColor = true;
+            this.btn_MenosVendido.Click += new System.EventHandler(this.btn_MenosVendido_Click);
             // 
             // btn_MayorGanancia
             // 
@@ -155,6 +163,7 @@
             this.btn_MayorGanancia.TabIndex = 3;
             this.btn_MayorGanancia.Text = "Mayor Ganancia";
             this.btn_MayorGanancia.UseVisualStyleBackColor = true;
+            this.btn_MayorGanancia.Click += new System.EventHandler(this.btn_MayorGanancia_Click);
             // 
             // lbl_GenerarVentas
             // 
@@ -214,5 +223,6 @@
         private ColumnHeader Noviembre;
         private ColumnHeader Diciembre;
         private Button btn_Regresar;
+        private ColumnHeader Nombre;
     }
 }
