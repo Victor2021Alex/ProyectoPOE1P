@@ -120,6 +120,7 @@
             this.txt_Contraseña.Name = "txt_Contraseña";
             this.txt_Contraseña.Size = new System.Drawing.Size(308, 39);
             this.txt_Contraseña.TabIndex = 3;
+            this.txt_Contraseña.UseSystemPasswordChar = true;
             // 
             // txt_Usuario
             // 

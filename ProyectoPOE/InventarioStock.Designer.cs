@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_EliminarProducto = new System.Windows.Forms.Button();
             this.cmb_FiltrarStock = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lv_ListaProductos = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
@@ -60,17 +60,18 @@
             this.button1.Text = "+Agregar Producto";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btn_EliminarProducto
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkGray;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(1067, 65);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(204, 77);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "- Eliminar Producto";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_EliminarProducto.BackColor = System.Drawing.Color.DarkGray;
+            this.btn_EliminarProducto.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_EliminarProducto.Location = new System.Drawing.Point(1067, 65);
+            this.btn_EliminarProducto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_EliminarProducto.Name = "btn_EliminarProducto";
+            this.btn_EliminarProducto.Size = new System.Drawing.Size(204, 77);
+            this.btn_EliminarProducto.TabIndex = 1;
+            this.btn_EliminarProducto.Text = "- Eliminar Producto";
+            this.btn_EliminarProducto.UseVisualStyleBackColor = false;
+            this.btn_EliminarProducto.Click += new System.EventHandler(this.btn_EliminarProducto_Click);
             // 
             // cmb_FiltrarStock
             // 
@@ -89,7 +90,8 @@
             "BEBIDAS",
             "ALIMENTOS PREPARADOS",
             "AUTOMEDICACIÓN",
-            "HIGIENE PERSONAL:"});
+            "HIGIENE PERSONAL:",
+            "TODOS"});
             this.cmb_FiltrarStock.Location = new System.Drawing.Point(21, 85);
             this.cmb_FiltrarStock.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmb_FiltrarStock.Name = "cmb_FiltrarStock";
@@ -131,15 +133,15 @@
             this.lv_ListaProductos.UseCompatibleStateImageBehavior = false;
             this.lv_ListaProductos.View = System.Windows.Forms.View.Details;
             // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Articulo";
-            this.columnHeader1.Width = 140;
-            // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Nombre";
             this.columnHeader2.Width = 140;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Articulo";
+            this.columnHeader1.Width = 140;
             // 
             // columnHeader3
             // 
@@ -217,7 +219,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cmb_FiltrarStock);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_EliminarProducto);
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "InventarioStock";
@@ -231,7 +233,7 @@
         #endregion
 
         private Button button1;
-        private Button button2;
+        private Button btn_EliminarProducto;
         private ComboBox cmb_FiltrarStock;
         private GroupBox groupBox1;
         private ListView lv_ListaProductos;
